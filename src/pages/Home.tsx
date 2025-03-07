@@ -10,7 +10,7 @@ function Home() {
       <Head title='Task Ai - AI-Powered To-Do List & Project Management App' />
 
       <section>
-        <div className='container !px-8 grid grid-cols-1 gap-8 items-center xl:gap-12 xl:grid-cols-[1fr_1.5fr]'>
+        <div className='container !px-10 grid grid-cols-1 gap-8 items-center xl:gap-12 xl:grid-cols-[1fr_1.5fr]'>
           <div className='flex flex-col items-center text-center space-y-4 lg:text-left lg:items-start lg:space-y-6'>
             <h1 className='text-4xl font-semibold max-w-[22ch] md:text-5xl lg:text-6xl xl:text-5xl 2xl:text-6xl'>
               Simplify Your Work and Life with{' '}

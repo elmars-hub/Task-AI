@@ -28,6 +28,7 @@ import { Link } from 'react-router';
 import Logo from '@/components/Logo';
 import { UserButton } from '@clerk/clerk-react';
 import { CirclePlus, Plus, ChevronRight } from 'lucide-react';
+import TaskFormDialog from '@/components/TaskFormDialog';
 
 import { SIDEBAR_LINKS } from '@/constants';
 
@@ -50,9 +51,11 @@ function AppSidebar() {
               {/* Task Create Button */}
 
               <SidebarMenuItem>
-                <SidebarMenuButton className='!text-primary'>
-                  <CirclePlus /> Add Task
-                </SidebarMenuButton>
+                <TaskFormDialog>
+                  <SidebarMenuButton className='!text-primary'>
+                    <CirclePlus /> Add Task
+                  </SidebarMenuButton>
+                </TaskFormDialog>
               </SidebarMenuItem>
 
               {/* Side Bar Links */}

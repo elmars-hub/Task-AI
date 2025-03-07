@@ -1,4 +1,4 @@
-import { Outlet, useNavigate } from 'react-router';
+import { Outlet, useNavigation } from 'react-router';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -6,9 +6,9 @@ import { logo } from '@/assets';
 import { Loader2 } from 'lucide-react';
 
 function RootLayout() {
-  const navigation = useNavigate();
+  const navigation = useNavigation();
 
-  const isLoading = navigate.state === 'loading' && !navigation.formData;
+  const isLoading = navigation.state === 'loading' && !navigation.formData;
   return (
     <>
       <div className='relative isolate min-h-[100dvh] flex flex-col overflow-hidden'>
