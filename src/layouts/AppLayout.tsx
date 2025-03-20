@@ -13,7 +13,6 @@ function AppLayout() {
       >
         <AppSidebar />
         <SidebarTrigger />
-        <div>AppLayout</div>
 
         <Outlet />
       </TooltipProvider>
